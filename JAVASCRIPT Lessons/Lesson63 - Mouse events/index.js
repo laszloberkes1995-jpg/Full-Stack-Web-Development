@@ -1,6 +1,6 @@
 // eventListener = Listen for specific events to create interactive web pages
 //                 events: click, mouseover, mouseout
-//                 .addEventListener(event, callback, anonymous/arrow function)
+//                 .addEventListener(event, callback, anonymous/arrow function);
 
 const myBox = document.getElementById("myBox");
 const myButton = document.getElementById("myButton");
