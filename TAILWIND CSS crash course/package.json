@@ -1,0 +1,17 @@
+{
+  "name": "tailwind-css-crash-course",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+"scripts": {
+  "build:css": "tailwindcss -i ./src/style.css -o ./dist/style.css",
+  "watch:css": "tailwindcss -i ./src/style.css -o ./dist/style.css --watch"
+},
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "devDependencies": {
+    "tailwindcss": "^3.4.19"
+  }
+}
