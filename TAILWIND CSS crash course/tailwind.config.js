@@ -2,7 +2,7 @@
 module.exports = {
   content: ["./dist/**/*.{html,js}",
             "./*.html",
-            "/./Website/**/*.html"],
+            "../../**/*.html"],
   theme: {
     container: {
       center: true,
