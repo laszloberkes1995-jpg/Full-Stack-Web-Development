@@ -1,19 +1,19 @@
 // ALT + SHIFT + F (reformat code)
 
-function Popup({ title }) {
+function Popup({ title,togglePopup }) {
   return (
     <>
       <div className="popup">
         <span>{title}</span>
         <div className="popup__btns">
           <button
-            onClick={() => console.log("Confirm button clicked")}
+            onClick={() => togglePopup()}
             className="popup__btn"
           >
             Confirm
           </button>
           <button
-            onClick={() => console.log("Cancel button clicked")}
+            onClick={() => togglePopup()}
             className="popup__btn popup__btn--cancel"
           >
             Cancel

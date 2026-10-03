@@ -11,7 +11,13 @@ function App() {
   // let popupOpen = false
 
   function togglePopup() {
-    setPopupOpen(true);
+    if(!popupOpen){
+      setPopupOpen(true);
+    }
+    else{
+      setPopupOpen(false);
+    }
+    
     console.log("parent notified");
   }
 
@@ -31,7 +37,7 @@ function App() {
       <Todo togglePopup={togglePopup} task="Finish ASAP Frontend" />
       <Todo togglePopup={togglePopup} task="Land a junior job" />
       <Todo togglePopup={togglePopup} task="Earn 100k" />
-      {popupOpen && <Popup title="Are you 1000000% sure?" />}
+      {popupOpen && <Popup togglePopup={togglePopup} title="Are you 1000000% sure?" />}
     </>
   );
 }
