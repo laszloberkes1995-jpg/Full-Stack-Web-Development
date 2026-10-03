@@ -10,11 +10,25 @@ function App() {
 
   return (
     <>
-    <MyFirst text="#1" picture="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQwI6VmMWMJ8TcDHgf8zBIkR6_wqLAQ7bPq9qDLlbSXSA&s=10"/>
-    <MyFirst text="#2" picture="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS4P9Bwj5EAxNzgiVD9zhSkA-KvAWBr72GhW7jQNt9ZTg&s=10"/>
-    <MyFirst text="#3" picture="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTdZTRcCp5iC8oydTxw48RqUdue4uHyNKbMN727VyOmIQ&s=10"/>
-    <MyFirst text="#4" picture="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTK6mrxWBhJDs3yVuvuVG6fve1xOv7SeN2PHPA1LV2f0g&s"/>
-    <MyFirst text="#5" picture="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTsdA0GbTYWLFOZlgzNU2mR5u5MQ7uFrqlyfilkcqi5yQ&s"/>
+    <TodoTitle />
+    <div>
+      <input type="text" onChange={(event) => {
+        console.log(event.target.value)
+      }} />
+      <button>Add to do</button>
+    </div>
+    <Todo 
+    task="Learn React"/>
+    <Todo 
+    task="Finish ASAP Frontend"
+    />
+    <Todo 
+    task="Land a junior job"
+    />
+    <Todo 
+    task="Earn 100k"/>
+    <Popup title = "Are you 1000000% sure?" />
+
     </>
   )
 }
